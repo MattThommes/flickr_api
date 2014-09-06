@@ -16,10 +16,16 @@ To get started, create a file called `auth_tokens.php` and put it in the same di
 
 	?>
 
-To get these values, we'll use the built-in API explorer on Flickr. That will let us bypass having to create an app, do the OAuth dance, etc.
+To get these values, we'll use the built-in API explorer on Flickr. This will let us bypass having to create an app, do the OAuth dance, etc.
 
 [Go here](https://www.flickr.com/services/api/explore/flickr.people.getPhotos) while logged-in to your Flickr account. Fill in the arguments as illustrated below:
 
 ![Screenshot of Flickr API explorer page](screenshot1.jpg)
 
-Copy your `user_id` from the right-hand side. The `extras` value should be: `original_format,description,date_upload,date_taken,geo`.
+Copy your `user_id` from the right-hand side. The `extras` value should be:
+
+`original_format,description,date_upload,date_taken,geo`
+
+When you click "Call Method..." it will load the data into the textbox and generate the URL:
+
+![Screenshot of Flickr API explorer page](screenshot2.jpg)
