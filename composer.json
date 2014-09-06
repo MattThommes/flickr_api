@@ -1,0 +1,16 @@
+{ 
+	"name": "mattthommes/flickr_api",
+	"description": "Scripts that interact with the Flickr API.",
+	"authors": [{
+			"name": "Matt Thommes",
+			"email": "matt@thomm.es",
+			"homepage": "http://blog.matt.thomm.es",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"MattThommes/Global": "1.0"
+	},
+	"homepage": "http://github.com/MattThommes/flickr_api",
+	"minimum-stability": "dev"
+}
