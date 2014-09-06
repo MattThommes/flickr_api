@@ -10,26 +10,7 @@
 	include "db_connect.php";
 	require_once("auth_tokens.php");
 
-	if (isset($_GET["frob"]) && $_GET["frob"]) {
-		// GET TOKEN.
-		$method = "flickr.auth.getToken";
-		$string = $consumer_secret . "api_key" . $consumer_key . "frob" . $_GET["frob"];
-		$string .= "method" . $method;
-		$url = "http://www.flickr.com/services/rest/";
-		$url .= "?method=" . $method;
-		$url .= "&api_key=" . $api_key;
-		$url .= "&frob=" . $_GET["frob"];
-		$url .= "&api_sig=" . $string;
-		$token = $http->curl($url);
-		$token = (array)$token->auth;
-		$token = $token["token"];
-	} else {
-		// OTHERWISE PROVIDE LOGIN LINK.
-		$login_link = "http://flickr.com/services/auth/";
-		$login_link .= "?api_key=" . $consumer_key;
-		$login_link .= "&perms=read";
-		$login_link .= "&api_sig=" . md5($consumer_secret . "api_key" . $consumer_key . "permsread");
-		echo "Login to Flickr and authorize";
-	}
+	$people_getPhotos_url = "https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key={$api_key}&user_id={$user_id}&extras=original_format%2Cdescription%2Cdate_upload%2Cdate_taken%2Cgeo&format=json&nojsoncallback=1&auth_token={$auth_token}&api_sig={$api_sig}";
+$debug->dbg($people_getPhotos_url);
 
 ?>

@@ -9,7 +9,7 @@
 		}
 	],
 	"require": {
-		"MattThommes/Global": "dev-master"
+		"MattThommes/Global": "1.1"
 	},
 	"homepage": "http://github.com/MattThommes/flickr_api",
 	"minimum-stability": "dev"
