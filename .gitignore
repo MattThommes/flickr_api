@@ -1,0 +1,5 @@
+auth_tokens.php
+db_connect.php
+vendor/
+composer.lock
+composer.phar
