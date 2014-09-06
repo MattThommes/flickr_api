@@ -1,6 +1,6 @@
-Tumblr API scripts
+Flickr API scripts
 ==========
 
-Working with the Tumblr API.
+Working with the Flickr API.
 
 ## Installation
