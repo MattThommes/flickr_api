@@ -29,5 +29,5 @@ When you click "Call Method..." it will load the data into the textbox and gener
 
 We'll use this URL to read the Flickr data. Populate the value in `api_url.php` with the **full URL**.
 
-**NOTE: The `api_key`, `auth_token`, and `api_sig` might expire quickly, so you'll have to regenerate the URL frequently.**
+**NOTE: The `api_key`, `auth_token`, and `api_sig` might expire quickly, so you'll have to regenerate the URL (if you plan to use the script frequently).**
 
