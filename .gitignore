@@ -1,5 +1,6 @@
-auth_tokens.php
+api_url.php
 db_connect.php
+photos/
 vendor/
 composer.lock
 composer.phar
