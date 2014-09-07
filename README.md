@@ -29,3 +29,22 @@ Copy your `user_id` from the right-hand side. The `extras` value should be:
 When you click "Call Method..." it will load the data into the textbox and generate the URL:
 
 ![Screenshot of Flickr API explorer page](screenshot2.jpg)
+
+We'll use this URL to read the Flickr data. First, populate the value in `auth_tokens.php` with the values from the URL. For example, you'll see the URL parameters are named the same as the PHP variables. So just copy/paste the values in:
+
+	https://api.flickr.com/services/rest/
+	?method=flickr.people.getPhotos
+	&api_key={API_KEY_HERE} <---
+	&user_id={USER_ID_HERE} <---
+	&extras=original_format%2Cdescription%2Cdate_upload%2Cdate_taken%2Cgeo
+	&per_page=500
+	&page=1
+	&format=json
+	&nojsoncallback=1
+	&auth_token={AUTH_TOKEN_HERE} <---
+	&api_sig={API_SIG_HERE} <---
+
+
+
+
+
