@@ -22,7 +22,7 @@ $debug->dbg($content);
 			$file = fopen($copy_dir . $photo->id . "." . $photo->originalformat, "w+");
 			fputs($file, $data);
 			fclose($file);
-			exit;
+exit; // testing one file.
 		}
 		// fetch next page.
 		$page++;

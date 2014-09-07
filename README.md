@@ -31,7 +31,3 @@ We'll use this URL to read the Flickr data. Populate the value in `api_url.php` 
 
 **NOTE: The `api_key`, `auth_token`, and `api_sig` might expire quickly, so you'll have to regenerate the URL frequently.**
 
-
-
-
-
