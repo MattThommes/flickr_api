@@ -44,6 +44,8 @@ We'll use this URL to read the Flickr data. First, populate the value in `auth_t
 	&auth_token={AUTH_TOKEN_HERE} <---
 	&api_sig={API_SIG_HERE} <---
 
+**NOTE: The `api_key`, `auth_token`, and `api_sig` might expire quickly, so you'll have to regenerate the URL frequently.**
+
 
 
 
