@@ -1,4 +1,5 @@
-api_url.php
+api_urls.php
+aws_config.php
 db_connect.php
 photos/
 vendor/
