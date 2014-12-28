@@ -3,6 +3,7 @@
 	require "vendor/autoload.php";
 	use MattThommes\Debug;
 	use MattThommes\Backend\Mysql;
+	use MattThommes\Rest\Aws;
 	$debug = new Debug;
 
 	$datestamp = date("Ymd", strtotime("now")); // date the backup is performed.

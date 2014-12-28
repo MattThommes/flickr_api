@@ -55,8 +55,6 @@ Create a file called `aws_config.php` and put it in the same directory as `api_u
 
 	<?php
 
-		use MattThommes\Rest\Aws;
-
 		$s3 = new Aws("AWS_KEY", "AWS_SECRET", "s3");
 		$s3_bucket = "BUCKET_NAME";
 		$s3_dir = "photos/flickr/" . $datestamp . "/";
