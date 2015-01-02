@@ -3,15 +3,18 @@
 	require "vendor/autoload.php";
 	use MattThommes\Debug;
 	use MattThommes\Backend\Mysql;
-	use MattThommes\Rest\Aws;
 	$debug = new Debug;
 
 	$datestamp = date("Ymd", strtotime("now")); // date the backup is performed.
 	$photos_perpage = 25;
 
 	//include "db_connect.php";
-	require_once("api_urls.php");
+	require_once("flickr_config.php");
 	require_once("aws_config.php");
+
+	echo "<p><a href='" . $flickr->authorize_url . "' target='_blank'>Authorize access to your Flickr account</a></p>";
+
+exit;
 
 	$local_dir = "/path/to/flickr/photos/";
 
