@@ -5,6 +5,10 @@
 	use MattThommes\Backend\Mysql;
 	$debug = new Debug;
 
+	function dbg($x, $continue = 0) {
+		return $GLOBALS["debug"]->dbg($x, $continue);
+	}
+
 	$datestamp = date("Ymd", strtotime("now")); // date the backup is performed.
 	$photos_perpage = 25;
 
@@ -12,7 +16,7 @@
 	require_once("flickr_config.php");
 	require_once("aws_config.php");
 
-	echo "<p><a href='" . $flickr->authorize_url . "' target='_blank'>Authorize access to your Flickr account</a></p>";
+	echo "<p><a href='" . $flickr->authorize_url . "'>Authorize access to your Flickr account</a></p>";
 
 exit;
 
