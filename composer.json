@@ -9,7 +9,7 @@
 		}
 	],
 	"require": {
-		"MattThommes/Global": "1.1",
+		"mattthommes/global": "dev-master",
 		"aws/aws-sdk-php": "2.7.12"
 	},
 	"homepage": "http://github.com/MattThommes/flickr_api",
