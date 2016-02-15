@@ -16,7 +16,7 @@
 	require_once("flickr_config.php");
 	require_once("aws_config.php");
 
-	echo "<p><a href='" . $flickr->authorize_url . "'>Authorize access to your Flickr account</a></p>";
+	echo "<p><a href='" . $flickr->authorize_url . "'>Authorize access to your Flickr account</a> | <a href='fetch_photos.php'>Start over</a></p>";
 
 exit;
 
